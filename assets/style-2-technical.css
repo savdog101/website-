@@ -1,0 +1,14 @@
+/* 2. TECHNICAL: top navigation bar, mono labels, hard edges, blueprint feel. */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500&display=swap");
+@import url("palettes.css");@import url("base.css");
+:root{--head:"Space Grotesk",sans-serif;--body:"IBM Plex Sans",sans-serif;--r:0}
+body{display:block;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:32px 32px;background-attachment:fixed}
+.rail{position:sticky;top:0;z-index:5;height:auto;flex-direction:row;align-items:center;gap:2rem;padding:.9rem clamp(1.2rem,5vw,4.5rem);background:var(--bg);border:0;border-bottom:2px solid var(--ink)}
+.rail nav{flex-direction:row}.logo span{display:none}.logo{font-size:1.25rem}
+main{margin:0 auto}
+.tile{border:2px solid var(--ink);background:var(--panel);box-shadow:6px 6px 0 var(--ink)}
+.tile:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--accent)}
+.chip{font-family:"IBM Plex Mono",monospace;border-radius:0;border:1px solid var(--ink);text-transform:uppercase;font-size:.7rem}
+.hero h1{font-weight:700;letter-spacing:-.03em}
+.btn{border:2px solid var(--ink)}
+@media(max-width:860px){.rail{flex-wrap:wrap}}

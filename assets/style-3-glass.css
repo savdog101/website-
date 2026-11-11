@@ -1,0 +1,12 @@
+/* 3. GLASS: soft glowing gradient background, frosted cards, centred top nav. */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
+@import url("palettes.css");@import url("base.css");
+:root{--head:"Manrope",sans-serif;--body:"Manrope",sans-serif;--r:28px}
+body{display:block;background:radial-gradient(circle at 15% 10%,color-mix(in srgb,var(--accent) 35%,transparent),transparent 45%),radial-gradient(circle at 90% 30%,color-mix(in srgb,var(--accent2) 35%,transparent),transparent 45%),var(--bg);background-attachment:fixed}
+.rail{position:static;height:auto;flex-direction:row;justify-content:center;align-items:center;gap:2.5rem;border:0;padding:1.5rem}
+.rail nav{flex-direction:row}.logo span{display:none}
+main{margin:0 auto}
+.tile{background:color-mix(in srgb,var(--panel) 65%,transparent);backdrop-filter:blur(14px);border:1px solid color-mix(in srgb,var(--ink) 12%,transparent);box-shadow:0 20px 50px -20px color-mix(in srgb,var(--accent) 50%,transparent)}
+.tile>img.cover,.tile::before{margin:.7rem .7rem 0;width:calc(100% - 1.4rem);border-radius:calc(var(--r) - 8px)}
+.hero h1{font-weight:800;letter-spacing:-.04em}
+.chip{background:color-mix(in srgb,var(--accent) 15%,transparent);border:0;color:var(--accent)}

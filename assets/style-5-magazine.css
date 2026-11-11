@@ -1,0 +1,15 @@
+/* 5. MAGAZINE: one wide row per article, image on the left, calm and formal. */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap");
+@import url("palettes.css");@import url("base.css");
+:root{--head:"Libre Baskerville",Georgia,serif;--body:"Work Sans",sans-serif;--r:6px}
+.hero h1{font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.bento{grid-template-columns:1fr}
+.tile,.tile.big,.tile.wide,.tile.third,.tile.half{grid-column:auto;display:grid;grid-template-columns:minmax(180px,40%) 1fr;align-content:center;min-height:220px}
+.tile.big{min-height:320px}
+.tile::before,.tile>img.cover{grid-column:1;grid-row:1/span 3;height:100%;width:100%;max-height:none;min-height:100%}
+.tile>:not(img){grid-column:2}
+.tile h3{font-size:1.4rem;font-weight:700}.tile.big h3{font-size:1.9rem}
+.tile p{margin-bottom:0}.tile .chip{margin-top:0;margin-bottom:.2rem;align-self:end}
+div.tile{display:block;min-height:0}
+.chip{border-radius:0;background:none;border:0;border-bottom:2px solid var(--accent);padding:0;font-family:var(--body);text-transform:uppercase;letter-spacing:.08em;font-size:.72rem}
+@media(max-width:860px){.tile,.tile.big{grid-template-columns:1fr}.tile::before,.tile>img.cover{grid-column:1;grid-row:auto;min-height:180px}.tile>:not(img){grid-column:1}}

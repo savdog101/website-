@@ -1,0 +1,6 @@
+/* COLOURS. Set the palette on the <html> tag: <html lang="en" data-palette="purple">
+   Options: black, blue, purple, pink. Edit any hex code below to customise. */
+:root,:root[data-palette="blue"]{--bg:#eef3ff;--panel:#fff;--ink:#0b1b4d;--muted:#53607f;--line:#cfd9f5;--accent:#1d4ed8;--accent2:#38bdf8;--on-accent:#fff}
+:root[data-palette="black"]{--bg:#0a0a0a;--panel:#151515;--ink:#f4f4f5;--muted:#a1a1aa;--line:#2a2a2a;--accent:#f4f4f5;--accent2:#52525b;--on-accent:#0a0a0a}
+:root[data-palette="purple"]{--bg:#f5f1ff;--panel:#fff;--ink:#24104d;--muted:#66598a;--line:#ddd2f7;--accent:#6d28d9;--accent2:#c084fc;--on-accent:#fff}
+:root[data-palette="pink"]{--bg:#fff1f6;--panel:#fff;--ink:#4a0d2a;--muted:#8a4a68;--line:#f6cfe0;--accent:#db2777;--accent2:#fb7185;--on-accent:#fff}

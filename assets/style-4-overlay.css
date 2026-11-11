@@ -1,0 +1,14 @@
+/* 4. OVERLAY: photo-led cards, with text laid over the image. Best with real photos. */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap");
+@import url("palettes.css");@import url("base.css");
+:root{--head:"DM Serif Display",Georgia,serif;--body:"DM Sans",sans-serif;--r:20px}
+.hero h1{font-weight:400;letter-spacing:-.02em}
+.tile{position:relative;min-height:320px;justify-content:flex-end;border:0;color:#fff}
+.tile.big{min-height:440px}
+.tile::before,.tile>img.cover{position:absolute;inset:0;width:100%;height:100%;max-height:none;min-height:0;z-index:0}
+.tile::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(transparent 25%,rgba(0,0,0,.82))}
+.tile>:not(img){position:relative;z-index:2}
+.tile p{color:#e5e7eb}.tile h3{font-weight:400;font-size:1.6rem}.tile.big h3{font-size:2.4rem}
+.chip{background:rgba(255,255,255,.2);color:#fff;border:0;backdrop-filter:blur(6px)}
+div.tile{color:var(--ink);min-height:0}div.tile::after{display:none}
+.tile:has(>img.cover):hover>img.cover{transform:scale(1.04);transition:transform .4s}

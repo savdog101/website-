@@ -1,0 +1,9 @@
+/* 1. EDITORIAL: serif headlines, sharp corners, sidebar. Like a quality journal. */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap");
+@import url("palettes.css");@import url("base.css");
+:root{--head:"Playfair Display",Georgia,serif;--body:"Inter",system-ui,sans-serif;--r:2px}
+.hero h1{font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.tile{border:0;border-top:4px solid var(--ink)}
+.tile h3{font-size:1.45rem;font-weight:600}.tile.big h3{font-size:2.2rem;font-weight:800}
+.chip{border-radius:0;text-transform:uppercase;letter-spacing:.08em;font-family:var(--body);font-size:.7rem;background:none;border:0;padding:0;color:var(--accent)}
+.rail nav a{border-radius:0;font-family:var(--body)}
